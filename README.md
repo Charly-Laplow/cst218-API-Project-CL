@@ -76,6 +76,9 @@ PUT /assignments/:id
 Delete a specific assignment by ID:
 DELETE /assignments/:id 
 
+#### Live Deployment
+https://github.com/Charly-Laplow/cst218-API-Project-CL
+
 #### Future potential updates
 
 Currently I plan to implement a UI and possibly add another feature.
