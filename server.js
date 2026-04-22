@@ -15,8 +15,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 // Imports the routes
-const assignmentsRoutes = require("./routes/assignmentsRoutes"); // Import router
-const usersRoutes = require("./routes/usersRoutes"); 
+const assignmentsRoutes = require("./routes/assignmentsRoutes");
+const usersRoutes = require("./routes/usersRoutes");
+const myClassRoutes = require("./routes/myClassRoutes"); 
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -62,6 +63,7 @@ app.get("/classes", (req, res) => {
 // Mount for assignments and users routes
 app.use("/assignments", assignmentsRoutes);
 app.use("/users", usersRoutes);
+app.use("/myClass", myClassRoutes);
 
 // 404 handler
 app.use((req, res) => {
