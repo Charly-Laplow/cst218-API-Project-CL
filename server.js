@@ -74,5 +74,5 @@ app.use((req, res) => {
 
 // Handler listening for deployed port
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
